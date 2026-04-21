@@ -26,7 +26,7 @@ public class AdminDataLoader implements CommandLineRunner {
                 admin.setPassword(passwordEncoder.encode("123"));
                 admin.setActive(true);
                 userService.updateUser(admin);
-                System.out.println(">>> Admin password updated. Login with admin/123");
+                System.out.println(">>> Admin password updated.");
             }
         } catch (Exception e) {
             System.err.println("AdminDataLoader: " + e.getMessage());
