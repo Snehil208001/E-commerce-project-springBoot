@@ -40,7 +40,7 @@ public class userService {
 	        return userDao.getUserByUsername(username);
 	    }
 
-	public void deleteUser(int id) {
+	public void deactivateUser(int id) {
 		userDao.deleteUser(id);
 	}
 
